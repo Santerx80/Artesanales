@@ -1,0 +1,1088 @@
+.inactive {
+  display: none;
+}
+
+:root {
+  --nav: #fda1a2;
+  --navSombreado: #c77677;
+  --texto: #261d41;
+  --fondo: #fefbf6;
+  --degradado: #b8aef5;
+  --degradado1: #d5cdf8;
+  --blanco: #fff;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  background-color: var(--fondo);
+}
+
+/*---NAV*---*/
+
+/*---h1 Servicio al cliente*/
+h1 {
+  display: grid;
+  place-items: center;
+  padding: 10px 0;
+  font-size: 40px;
+}
+
+/*---Formulario---*/
+.contacto {
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  margin: 10px 30px;
+}
+
+.contacto .col {
+  width: auto;
+  height: auto;
+  margin: 10px 10px;
+  padding: 10px 20px;
+  position: relative;
+  background-color: white;
+  border: 2px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.contacto .col input,
+.contacto .col textarea {
+  display: flex;
+  padding: 10px;
+  border: none;
+  margin: 20px 10px;
+  background-color: #ece7e7;
+  border-radius: 20px;
+  font-size: 20px;
+  width: 300px;
+  height: auto;
+}
+
+.contacto button {
+  cursor: pointer;
+  background-color: #fda1a2;
+  border: 2px solid #fda1a2;
+  display: block;
+  margin: 20px auto;
+  padding: 5px 80px;
+  font-size: 20px;
+  color: white;
+  position: relative;
+  z-index: 10;
+  border-radius: 50px;
+}
+
+/*---SECCION PRODUCTO---*/
+.h1producto h1 {
+  display: grid;
+  place-items: left;
+  margin: 10px 220px;
+  font-size: 60px;
+}
+
+.contenedor {
+  display: flex;
+  margin: 0 auto;
+  /* Centra el contenedor y utiliza margen automático */
+  max-width: 80%;
+  /* Establece un ancho máximo para el contenedor si es necesario */
+}
+
+.medio,
+.derecha {
+  flex: 1;
+  /* Hace que todos los divs ocupen un espacio igual */
+  padding: 35px;
+  width: 400px;
+}
+
+.izquierda {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 100%;
+}
+
+.medio {
+  margin: 20px 0;
+  background-color: white;
+  border: 2px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-left: 50px;
+  /* Puedes ajustar el margen entre .medio y .izquierda según sea necesario */
+}
+
+.derecha {
+  margin-left: 50px;
+  /* Puedes ajustar el margen entre .derecha y .medio según sea necesario */
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.derecha > h3 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.derecha p {
+  font-size: 20px;
+  display: grid;
+  place-items: left;
+}
+
+/*SECCION DE BOTONES TALLA (INICIO)*/
+.derecha .contenedor-talla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+.derecha .form-select {
+  cursor: pointer;
+  padding: 5px 30px;
+  color: white;
+  background-color: #a3a2a2;
+  border: 2px solid #a3a2a2;
+  border-radius: 20px;
+  margin: 5px 10px;
+  display: grid;
+  place-items: center;
+}
+
+/*SECCION DE BOTONES TALLA (FIN)*/
+.derecha .botoncomprar {
+  display: grid;
+  place-items: center;
+  margin-top: auto;
+  margin: 10px;
+}
+
+.derecha .botoncomprar button {
+  cursor: pointer;
+  background-color: #fda1a2;
+  border: 2px solid #fda1a2;
+  display: block;
+  padding: 5px 60px;
+  font-size: 20px;
+  color: white;
+  border-radius: 20px;
+}
+
+/*BOTON DE CANTIDAD EN PRODUCTO*/
+.derecha .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border-radius: 45px;
+}
+
+.derecha .container input[type="number"] {
+  background-color: rgb(2, 1, 58);
+  color: white;
+  border: none;
+  font-size: 20px;
+  text-align: center;
+  padding: 5px 10px;
+  pointer-events: none;
+}
+
+.derecha .container input ::-webkit-outer-spin-button,
+input ::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.derecha .container button {
+  color: white;
+  border: none;
+  background-color: rgb(2, 1, 58);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#decrement {
+  padding: 5px 10px;
+  border-radius: 45px 0 0 45px;
+}
+
+#increment {
+  padding: 5px 10px;
+  border-radius: 0 45px 45px 0;
+}
+
+.izquierda .contenedores {
+  margin: 20px 20px;
+  background-color: white;
+  border: 2px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+  margin-left: 50px;
+}
+
+/*---SECCION TARJETAS---*/
+.h1tarjetas h1 {
+  display: grid;
+  place-items: center;
+}
+
+.contenedor-tarjetas {
+  display: flex;
+  place-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  height: 500px;
+  width: 960px;
+  overflow: hidden;
+  white-space: nowrap;
+  /* Evita que los elementos se rompan en líneas */
+}
+
+.flecha-izquierda,
+.flecha-derecha {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.flecha-izquierda {
+  margin-right: 10px;
+  /* Ajusta el margen según tus necesidades */
+}
+
+.flecha-derecha {
+  margin-left: 10px;
+  /* Ajusta el margen según tus necesidades */
+}
+
+.contenido-imagenes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: auto;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.contenedor-tarjetas .tarjetas {
+  flex: 0 0 auto;
+  background-color: white;
+  border: 2px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  margin: 0 17px;
+  width: 250px;
+  height: 350px;
+  display: flex;
+  position: relative;
+  /* Añade posición relativa al contenedor */
+  transition: transform 0.7s ease;
+  /* Añade la transición aquí */
+}
+
+.contenedor-tarjetas .tarjetas:hover {
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.1);
+  transition: all 0.7s ease;
+}
+
+.contenedor-tarjetas .tarjetas a {
+  cursor: pointer;
+  background-color: #fda1a2;
+  border: 2px solid #fda1a2;
+  display: block;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: white;
+  border-radius: 20px;
+  position: absolute;
+  text-decoration: none;
+  bottom: -30px;
+  /* Ajusta la posición desde la parte inferior según sea necesario */
+  left: 27%;
+  /* Coloca el botón en el centro horizontalmente */
+}
+
+/*IMAGEN EN LAS TARJETAS*/
+.contenedor-tarjetas .tarjetas img {
+  width: 100%;
+  /* Hace que la imagen ocupe el 100% del ancho del div */
+  height: 100%;
+  /* Hace que la imagen ocupe el 100% de la altura del div */
+  object-fit: cover;
+  /* Ajusta la imagen para cubrir todo el contenedor sin distorsionar la proporción */
+  border-radius: 20px;
+  /* Aplica el mismo radio de borde que el contenedor */
+}
+
+/*IMAGEN DEL DIV IZQUIERDA TARJETAS*/
+.contenedor .izquierda img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/*IMAGEN DEL DIV MEDIO TARJETAS*/
+.contenedor .medio img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/*SECCION DE PAGINA CARRITO*/
+
+/*DIV DE CUANDO EL CARRITO ESTE VACIO*/
+
+.centrarlista {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 70vw;
+  height: 30vh;
+}
+
+.listavacia {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.contenedorcarrito {
+  display: flex;
+  margin: 100px auto; /* Centra el contenedor y utiliza margen automático */
+  max-width: 70%; /* Establece un ancho máximo para el contenedor si es necesario */
+}
+.izquierdacarro {
+  display: flex;
+  flex-direction: column; /* Apila los elementos verticalmente */
+}
+
+.contenedorcarrito .izquierdacarro .compras {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 20px;
+}
+
+@media (max-width: 768px) {
+  .contenedorcarrito {
+    flex-direction: column;
+  }
+
+  .contenedorcarrito .izquierdacarro {
+    width: 100%;
+    margin: 10px;
+  }
+  .contenedorcarrito h1,
+  p {
+    font-size: 26px;
+  }
+  .compras {
+    font-size: 30px;
+  }
+}
+.contenedorcarrito .izquierdacarro .imagencarrito {
+  width: 200px;
+  height: 100%;
+  margin-right: 25px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin: 20px 20px;
+  background-color: white;
+  border: 2px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+/*DIV DE AUMENTAR Y DESCREMENTAR CANTIDAD PRODUCTO*/
+.botonescompra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  width: auto;
+}
+
+.botonescompra .center input[type="number"] {
+  background-color: rgb(2, 1, 58);
+  color: white;
+  border: none;
+  font-size: 16px;
+  text-align: center;
+  padding: 5px 10px;
+  pointer-events: none;
+}
+
+.botonescompra .center input ::-webkit-outer-spin-button,
+input ::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.botonescompra .center button {
+  color: white;
+  border: none;
+  background-color: rgb(2, 1, 58);
+  font-size: 16px;
+  cursor: pointer;
+}
+.botonescompra .center {
+  margin-bottom: 10px;
+}
+
+.botonescompra .center #decrement {
+  padding: 5px 10px;
+  border-radius: 45px 0 0 45px;
+}
+
+.botonescompra .center #increment {
+  padding: 5px 10px;
+  border-radius: 0 45px 45px 0;
+}
+
+/*DIV DE BOTON eliminar y sumar*/
+.botonescompra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20px;
+  width: auto;
+}
+
+.eliminar {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.fa-solid {
+  font-size: 20px;
+}
+
+.cantidad {
+  height: 30px;
+  width: 30px;
+}
+.compras p {
+  font-size: 30px;
+}
+
+/*BOTON DE AUMENTAR CANTIDAD DE PRODUCTOS*/
+.botoncantidad .center {
+  width: 200px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+}
+
+.center {
+  width: 200px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 40px;
+}
+
+.addNumber_cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contador {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 35px;
+  color: white;
+  background-color: #010046;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.value_cont {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*DIV DE LA PARTE DERECHA DE LA PAGINA CARRITO*/
+.contenedorcarrito .derechacarro {
+  width: 50%;
+  margin: 10px 100px;
+}
+
+.contenedorcarrito .derechacarro .recibo {
+  background-color: white;
+  border: 2px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.contenedorcarrito .derechacarro .detalles {
+  margin: 20px;
+}
+.detalles .precio {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detalles .linea {
+  border: 1px solid #000;
+  margin: 20px 0;
+}
+
+.detalles .total {
+  display: flex;
+  justify-content: space-between;
+}
+/*CORREO ELECTRONICO*/
+.detalles .informacion {
+  position: relative;
+  display: grid;
+  place-items: left;
+  margin: 10px 0;
+}
+.detalles .informacion input {
+  width: auto;
+  height: 30px;
+  border-radius: 20px;
+  font: 16px;
+  padding: 0 15px;
+  border: 2px solid rgb(226, 225, 225);
+  background: rgb(226, 225, 225);
+  color: #000;
+  outline: none;
+}
+.detalles .informacion label {
+  margin-left: 5px;
+  color: rgb(0, 0, 99);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/*NOMBRE ,APELLIDO, CEDULA Y TELEFONO */
+.detalles .informacion2,
+.informacion3 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  width: auto;
+  height: auto;
+}
+.detalles .informacion2 input,
+.informacion3 input {
+  width: auto;
+  height: 30px;
+  border-radius: 20px;
+  font-size: 16px;
+  padding: 0 15px;
+  border: 2px solid rgb(226, 225, 225);
+  background: rgb(226, 225, 225);
+  color: #000;
+  outline: none;
+}
+.detalles .informacion2 .infonombre,
+.infoapellido,
+.infocedula,
+.infotelefono {
+  display: grid;
+  place-items: left;
+}
+.detalles .informacion2 label,
+.informacion3 label {
+  margin-left: 5px;
+  color: rgb(0, 0, 99);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/*DIV DIRECCION*/
+.opciondireccion {
+  display: flex;
+  margin: 10px 20px;
+  height: auto;
+  width: auto;
+}
+.opciondireccion select {
+  cursor: pointer;
+  padding: 5px 10px;
+  color: white;
+  background-color: #fda1a2;
+  border: 2px solid #fda1a2;
+  border-radius: 20px;
+  flex-grow: 1;
+  margin: 10px 20px;
+  width: auto;
+  height: auto;
+  font-size: 16px;
+}
+.titulodireccion {
+  margin-top: 70px;
+  margin-left: 25px;
+}
+
+/*INPUT DE Direccion*/
+.direccion .informacion {
+  position: relative;
+  display: grid;
+  place-items: left;
+  margin: 10px 20px;
+}
+.direccion .informacion input {
+  width: auto;
+  height: 30px;
+  border-radius: 20px;
+  font: 16px;
+  padding: 0 15px;
+  border: 2px solid rgb(226, 225, 225);
+  background: rgb(226, 225, 225);
+  color: #000;
+  outline: none;
+}
+.direccion .informacion label {
+  margin-left: 5px;
+  color: rgb(0, 0, 99);
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/*DIV DE BOTON PAGAR (Paypal)*/
+.botonpagar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.botonpagar a {
+  background-color: #fda1a2;
+  border: 2px solid #fda1a2;
+  color: white;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 10px 150px;
+  text-decoration: none;
+}
+
+/*SECTION DE INICIAR SESION*/
+/*HEADER*/
+.headerinicio {
+  background-color: #fda1a2;
+  display: grid;
+  place-items: center;
+  height: 100px;
+  padding: 2px;
+  font-size: 20px;
+}
+
+/*INICIAR SESION */
+.cuerpo {
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.forminicio {
+  box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
+  border-radius: 20px;
+  text-align: center;
+  width: 340px;
+  margin-top: 60px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 10px 20px;
+}
+
+.cuerpo h2 {
+  font-size: 35px;
+  margin-top: 5px;
+  padding: 20px;
+}
+
+.cuerpo label {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.cuerpo input,
+textarea {
+  padding: 17px 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: #fefbf6;
+  border: 2px solid gray;
+  outline: none;
+  font-size: 15px;
+}
+
+.olvido-password {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.olvido-password a {
+  color: rgb(0, 50, 212);
+  font-size: 16px;
+}
+
+.cuerpo .btniniciar {
+  font-size: 16px;
+  color: white;
+  border-radius: 20px;
+  background-color: #fda1a2;
+  border: #fda1a2;
+  box-shadow: 0 0 20px rgb(194, 221, 243);
+  cursor: pointer;
+}
+
+.cuerpo .btniniciar:hover {
+  background-color: #fc8f91;
+}
+
+.cuerpo .registrar {
+  margin-bottom: 20px;
+  display: grid;
+  place-items: center;
+}
+.cuerpo .registrar p {
+  font-size: 18px;
+}
+
+.cuerpo .registrar a {
+  color: rgb(0, 50, 212);
+  font-size: 16px;
+}
+
+/*REGISTRO*/
+.cuerporegistro {
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.cuerporegistro .formregistro h2 {
+  color: #000;
+  font-size: 35px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.cuerporegistro .formregistro {
+  padding: 50px 55px;
+  box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 20px 20px;
+  width: 750px;
+  margin-top: 60px;
+  padding: 40px 35px 55px;
+}
+
+.cuerporegistro .formregistro .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.formregistro .input-box .input-field {
+  position: relative;
+  width: 48%;
+  height: 50px;
+  margin: 20px 0;
+}
+
+.formregistro .input-box .input-field input::placeholder {
+  color: black;
+}
+
+.cuerporegistro .input-box .input-field input {
+  width: 100%;
+  height: 100%;
+  border: 2px solid gray;
+  outline: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.cuerporegistro .formregistro label {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0px 9px;
+}
+
+.cuerporegistro .formregistro .input-box .input-field h4 {
+  position: absolute;
+  color: red;
+  top: 0px;
+}
+.cuerporegistro .formregistro .btnregistrar {
+  font-size: 16px;
+  color: white;
+  border-radius: 10px;
+  background-color: #fda1a2;
+  border: #fda1a2;
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+}
+.cuerporegistro .formregistro .btnregistrar:hover {
+  background-color: #fda0a2;
+}
+.input-box .input-field .password-container i {
+  color: #fda0a2;
+}
+.input-box .input-field {
+  position: relative;
+}
+.input-box .input-field .toggle-password {
+  position: absolute;
+  right: 10px;
+  bottom: -5px;
+}
+
+.password-container .form-control {
+  border: 2px solid gray;
+  outline: none;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 15px 0;
+}
+
+.cuerporegistro .formregistro p {
+  padding: 10px 0;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .cuerporegistro .formregistro {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .cuerpo {
+    width: 100%;
+  }
+  .cuerpo .forminicio {
+    width: 100%;
+  }
+
+  .formregistro .input-box .input-field {
+    width: 100%;
+  }
+  .whatsapp {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .h1producto h1 {
+    margin: 10px 20px;
+    font-size: 30px;
+  }
+  .h1tarjetas h1 {
+    margin: 10px 20px;
+    font-size: 30px;
+  }
+  .contenedor {
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .medio,
+  .derecha,
+  .izquierda {
+    width: 100%;
+    margin-left: 0;
+    place-items: center;
+  }
+  .izquierda {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .izquierda img {
+    width: 100%; /* Asegurarse de que las imágenes ocupen el 100% del ancho del contenedor */
+    height: auto; /* Permitir que la altura se ajuste proporcionalmente al ancho */
+    margin-bottom: 10px; /* Agregar margen inferior entre las imágenes */
+  }
+  .derecha {
+    margin-top: 20px;
+  }
+}
+
+/*RESPONSIVE DE PAGINA CARRITO*/
+@media (max-width: 768px) {
+  .contenedorcarrito {
+    flex-direction: column;
+  }
+  .izquierdacarro .compras p {
+    font-size: 16px;
+  }
+  .izquierdacarro .compras h1 {
+    font-size: 20px;
+    width: 70%;
+  }
+  .izquierdacarro .eliminar {
+    font-size: 20px;
+  }
+  .izquierdacarro .contenedor-carrito {
+    display: flex;
+    flex-direction: column;
+  }
+  .izquierdacarro .compras {
+    width: 100%;
+  }
+  .izquierdacarro .compras .imagencarrito {
+    width: 70%;
+  }
+  .izquierdacarro .compras .botonescompra {
+    width: 70%;
+  }
+  .izquierdacarro .compras .botonescompra .center {
+    width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .derechacarro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .derechacarro .recibo {
+    background-color: red;
+  }
+  .derechacarro .recibo .detalles .precio {
+    width: 90%;
+  }
+  .derechacarro .recibo .detalles .total p {
+    width: 20%;
+  }
+  .derechacarro .recibo .detalles {
+    width: 100%;
+  }
+  .derechacarro .recibo .detalles p {
+    font-size: 16px;
+  }
+  .derechacarro .recibo .detalles h2 {
+    font-size: 20px;
+  }
+  .derecha .botonpagar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .derechacarro .botonpagar a {
+    width: 100%;
+    height: 10%;
+  }
+}
+
+/*RESPONSIVE DE DETALLES*/
+
+@media (max-width: 768px) {
+  .derechacarro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .derechacarro .recibo {
+    background-color: red;
+  }
+  .derechacarro .recibo .detalles .precio {
+    width: 90%;
+  }
+  .derechacarro .recibo .detalles .total p {
+    width: 20%;
+  }
+  .derechacarro .recibo .detalles {
+    width: 100%;
+  }
+  .derechacarro .recibo .detalles p {
+    font-size: 16px;
+  }
+  .derechacarro .recibo .detalles h2 {
+    font-size: 20px;
+  }
+  .derecha .botonpagar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .derechacarro .botonpagar a {
+    width: 100%;
+    height: 10%;
+  }
+  .derechacarro .recibo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .opciondireccion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .informacion,
+  .informacion2,
+  .informacion3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .recibo .detalles p {
+    width: 100%;
+    margin: 10px;
+  }
+}
+
+.detalles-compra {
+  margin-left: 30px;
+}
